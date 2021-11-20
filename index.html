@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Блог</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="logo">
+        <a href="https://github.com/andtheowind" target="_blank">andtheowind</a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/andtheowind" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </div>
+    <div id="app">
+      <div class="main">
+        <h1 class="text-center" id="my-title"></h1>
+        <h2>Введите текст</h2>
+        <div class="btns">
+          <button class="weight-bold-btn" title="Полужирный">B</button>
+          <button class="italics-btn" title="Курсив">I</button>
+          <button class="underline-btn" title="Подчеркнутый">U</button>
+          <button class="strikethrough-btn" title="Зачеркнутый">S</button>
+          <div class="select-color">
+              <label for="chooseColor">Цвет</label>
+              <input type="color" id="chooseColor" name="head" value="#000000">
+          </div>
+          <span>Размер</span>
+          <select id="fontSizeDD">
+            <option value='14'>14</option>
+            <option value='12'>12</option>
+            <option value='16'>16</option>
+            <option value='18'>18</option>
+            <option value='20'>20</option>
+            <option value='22'>22</option>
+            <option value='24'>24</option>
+            <option value='26'>26</option>
+          </select>
+
+        </div>
+        <input type="text" class="myInput">
+        <button class="btn" id="uppercase">Верхний регистр</button>
+        <button class="btn" id="first-symbol-uppercase">Каждое слово с заглавной буквы</button>
+        <button class="btn" id="delete-spaces">Удалить лишние пробелы</button>
+        <button class="btn" id="lowerCase">Нижний регистр</button>
+        <button class="btn" id="first-symbol-lowercase">Каждое слово с буквы нижнего регистра</button>
+        
+
+        <h2>Результат:</h2>
+        <input type="text" id="result">
+
+      </div>
+  
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="how-does-it-work">
+      <a href="#" target="_blank">
+        <p>Как работает приложение?</p>
+      </a>
+    </div>
+    <div id="line-block">
+      <p class="line">|</p>
+    </div>
+    <div>
+      <a href="#" target="_blank">
+        <p>Политика конфиденциальности</p>
+      </a>
+    </div>
+  </div>
+<script src="header-appearance.js"></script>
+<script src="text-transform.js"></script>
+</body>
+
+</html>
