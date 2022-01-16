@@ -16,26 +16,32 @@ let result = document.querySelector('#result');
 
 weightBoldBtn.addEventListener('click', function() {
 	myInput.classList.toggle('font-weight-bold');
+	result.classList.toggle('font-weight-bold');
 });
 
 italicsBtn.addEventListener('click', function() {
 	myInput.classList.toggle('font-italics');
+	result.classList.toggle('font-italics');
 });
 
 underlineBtn.addEventListener('click', function() {
 	myInput.classList.toggle('font-underline');
+	result.classList.toggle('font-underline');
 });
 
 strikethroughBtn.addEventListener('click', function() {
 	myInput.classList.toggle('font-strikethrough');
+	result.classList.toggle('font-strikethrough');
 });
 
 chooseColor.addEventListener('change', function() {
 	myInput.style.color = this.value;
+	result.style.color = this.value;
 });
 
 changeFontSize.addEventListener('change', function() {
 	myInput.style.fontSize = this.value + 'px';
+	result.style.fontSize = this.value + 'px';
 });
 
 
