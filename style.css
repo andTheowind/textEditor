@@ -93,7 +93,8 @@ h2 {
 .weight-bold-btn, 
 .italics-btn, 
 .underline-btn,
-.strikethrough-btn {
+.strikethrough-btn,
+#clear {
     border: 1px solid #B8C2DC;
     cursor: pointer;
 }
@@ -135,6 +136,16 @@ h2 {
     text-decoration: line-through;
 }
 
+#clear {
+    margin-right: 5px;
+    padding: 5px 4px 2px 4px;
+}
+
+#clear img {
+    height: 15px;
+    width: 15px;
+}
+
 .select-color {
     margin-right: 5px;
 }
@@ -147,6 +158,7 @@ h2 {
 #fontSizeDD {
     margin-left: 3px;
 }
+
 
 #uppercase {
 
