@@ -12,6 +12,7 @@ let firstSymbolUppercase = document.querySelector('#first-symbol-uppercase');
 let firstSymbolLowercase = document.querySelector('#first-symbol-lowercase');
 let deleteSpaces = document.querySelector('#delete-spaces');
 let result = document.querySelector('#result');
+let clearBtn = document.querySelector('#clear');
 
 
 weightBoldBtn.addEventListener('click', function() {
@@ -43,6 +44,12 @@ changeFontSize.addEventListener('change', function() {
 	myInput.style.fontSize = this.value + 'px';
 	result.style.fontSize = this.value + 'px';
 });
+
+clearBtn.addEventListener('click', function() {
+	myInput.value = '';
+	result.value = '';
+});
+
 
 
 let str = '';
