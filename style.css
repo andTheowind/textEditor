@@ -37,13 +37,14 @@ body {
 }
 
 #app {
-    max-width: 80%;
+    width: 80%;
+    max-width: 990px;
     margin: 0 auto;
     background: #fff;
     border: 5px solid #444444;
 }
 .main {
-    padding: 20px 20px 35px 20px;
+    padding: 20px 15px 35px 15px;
     background-color: #f7f7f7;
 }
 
@@ -71,6 +72,7 @@ h2 {
 
 .btns > button {
     margin-right: 4px;
+    font-size: 12px;
 }
 
 .btn {
@@ -79,7 +81,7 @@ h2 {
     font-weight: 500;
     cursor: pointer;
     align-self: flex-end;
-    padding: 9px 13px;
+    padding: 7px 9px;
     background: #d4e0fa;
     border: none;
     color: #1F5EFF;
@@ -168,7 +170,9 @@ h2 {
 
 }
 
-#delete-spaces {
+#delete-spaces,
+#delete-nums,
+#delete-symbol-uppercase {
     color: #E74848;
     background: #fad6d6;
     
@@ -182,7 +186,7 @@ h2 {
 .main > input {
     width: 100%;
     border: 2px solid #B8C2DC;
-    padding: 8px 10px 120px 10px;
+    padding: 8px 10px 90px 10px;
     font-size: 14px;
 }
 
