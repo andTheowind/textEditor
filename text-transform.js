@@ -11,9 +11,11 @@ let lowerCase = document.querySelector('#lowerCase');
 let firstSymbolUppercase = document.querySelector('#first-symbol-uppercase');
 let firstSymbolLowercase = document.querySelector('#first-symbol-lowercase');
 let deleteSpaces = document.querySelector('#delete-spaces');
+let underscores = document.querySelector('#underscores');
 let result = document.querySelector('#result');
 let clearBtn = document.querySelector('#clear');
-
+let deleteNums = document.querySelector('#delete-nums');
+let deleteAllUppercase = document.querySelector('#delete-symbol-uppercase');
 
 weightBoldBtn.addEventListener('click', function() {
 	myInput.classList.toggle('font-weight-bold');
@@ -43,6 +45,54 @@ chooseColor.addEventListener('change', function() {
 changeFontSize.addEventListener('change', function() {
 	myInput.style.fontSize = this.value + 'px';
 	result.style.fontSize = this.value + 'px';
+});
+
+underscores.addEventListener('click', function() {
+
+	let inputStr = myInput.value;
+	inputStr = inputStr.replace(/ +/g, ' ').trim();
+	let arr = inputStr.split('');
+	let newStr = '';
+	for(let i = 0; i < arr.length; i++) {
+		if(arr[i] !== ' ') {
+			newStr += arr[i];
+		} else {
+			newStr += '_';
+		}
+	}
+	result.value = newStr;
+
+});
+
+deleteNums.addEventListener('click', function() {
+
+	let inputStr = myInput.value;
+	let arr = inputStr.split('');
+	let newStr = '';
+	for(let i = 0; i < arr.length; i++) {
+		if(arr[i] !== ' ' && +arr[i] !== Number(arr[i])) {
+			newStr += arr[i];
+		} else if(arr[i] === ' ') {
+			newStr += arr[i];
+		}
+	}
+	result.value = newStr;
+
+});
+
+deleteAllUppercase.addEventListener('click', function() {
+
+	let inputStr = myInput.value;
+	let arr = inputStr.split('');
+	let newStr = '';
+	for(let i = 0; i < arr.length; i++) {
+		let elemUpperCase = arr[i].toUpperCase();
+		if(arr[i] !== elemUpperCase) {
+			newStr += arr[i]; 
+		}
+	}
+	result.value = newStr;
+
 });
 
 clearBtn.addEventListener('click', function() {
