@@ -87,7 +87,7 @@ deleteAllUppercase.addEventListener('click', function() {
 	let newStr = '';
 	for(let i = 0; i < arr.length; i++) {
 		let elemUpperCase = arr[i].toUpperCase();
-		if(arr[i] !== elemUpperCase && arr[i] === ' ') {
+		if(arr[i] !== elemUpperCase && arr[i] !== ' ') {
 			newStr += arr[i]; 
 		} else if(arr[i] === ' ') {
 			newStr += arr[i]; 
