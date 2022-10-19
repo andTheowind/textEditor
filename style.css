@@ -296,3 +296,9 @@ h2 {
         padding: 17px 100px;
     }
 }
+
+@media (min-width:1440px) {
+    .header {
+        padding: 17px 140px;
+    }
+}
